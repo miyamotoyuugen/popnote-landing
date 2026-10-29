@@ -1,0 +1,59 @@
+/* PopNote landing — mobile-first, calm, light sticky-note feel */
+:root{
+  --bg:#fbf8f1; --ink:#2b2a27; --muted:#6b675e; --line:#e8e2d4;
+  --note:#fff3b0; --note2:#ffe0e0; --note3:#dff3e4; --accent:#e0a800; --accent-ink:#2b2a27;
+  --radius:14px; --shadow:0 2px 0 rgba(0,0,0,.04),0 8px 20px rgba(80,60,0,.08);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:16px/1.7 -apple-system,BlinkMacSystemFont,"Hiragino Sans","Hiragino Kaku Gothic ProN","PingFang TC","PingFang SC","Noto Sans CJK JP","Noto Sans TC","Noto Sans SC","Segoe UI",Roboto,sans-serif;
+  padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left)}
+main{max-width:640px;margin:0 auto;padding:0 20px 40px}
+h1,h2,h3{line-height:1.35;margin:0 0 .5em}
+h2{font-size:1.25rem;margin-top:2.2em}
+a{color:inherit}
+.top{max-width:640px;margin:0 auto;padding:14px 20px;display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;justify-content:space-between}
+.logo{font-weight:700;letter-spacing:.02em}
+.langs{display:flex;flex-wrap:wrap;gap:6px;font-size:.85rem}
+.langs a{text-decoration:none;padding:4px 10px;border-radius:999px;border:1px solid var(--line);background:#fff}
+.langs a[aria-current]{background:var(--note);border-color:#f0dc78;font-weight:600}
+.sticky{background:var(--note);padding:22px 20px 26px;border-radius:4px 4px 18px 4px;box-shadow:var(--shadow);transform:rotate(-1deg);margin:18px 4px 22px;position:relative}
+.sticky::before{content:"";position:absolute;top:-10px;left:50%;width:72px;height:20px;margin-left:-36px;background:rgba(255,255,255,.6);border:1px solid rgba(0,0,0,.04);transform:rotate(2deg)}
+.sticky h1{font-size:1.5rem;margin:0}
+.sub{color:var(--muted);margin:0 0 20px}
+.cta,.placeholder-form button{display:inline-block;min-height:48px;padding:12px 22px;border-radius:999px;border:0;background:var(--ink);color:#fff;font:inherit;font-weight:600;text-decoration:none;text-align:center}
+.cta{width:100%}
+.notes{list-style:none;padding:0;margin:0;display:grid;gap:16px}
+.note{padding:18px 18px 16px;border-radius:4px 4px 14px 4px;box-shadow:var(--shadow)}
+.note h3{font-size:1.05rem}.note p{margin:0}
+.n1{background:var(--note);transform:rotate(-.6deg)}
+.n2{background:var(--note2);transform:rotate(.5deg)}
+.n3{background:var(--note3);transform:rotate(-.3deg)}
+.faq details{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:0 16px;margin:0 0 10px}
+.faq summary{cursor:pointer;padding:14px 0;font-weight:600;list-style:none;min-height:48px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";float:right;color:var(--muted)}
+.faq details[open] summary::after{content:"−"}
+.faq details p{margin:0 0 14px;color:var(--muted)}
+.waitlist{margin-top:2.2em;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:20px}
+.waitlist h2{margin-top:0}
+/* .form-slot: drop the Tally iframe in here; it will take full width. */
+.form-slot{width:100%;min-height:160px}
+.form-slot iframe{width:100%;border:0;display:block}
+.placeholder-form{display:grid;gap:8px}
+.placeholder-form label{font-weight:600;font-size:.95rem;margin-top:6px}
+.placeholder-form input{width:100%;min-height:48px;padding:12px 14px;font:inherit;font-size:16px;border:1px solid var(--line);border-radius:10px;background:#fdfcf8}
+.placeholder-form button{margin-top:10px;width:100%;opacity:.6}
+.form-note{font-size:.85rem;color:var(--muted);margin:12px 0 0}
+.thanks{background:var(--note3);padding:14px 16px;border-radius:10px;font-weight:600}
+.foot{text-align:center;color:var(--muted);font-size:.8rem;padding:24px 20px 40px}
+.picker{text-align:center;padding-top:12vh}
+.pick{display:grid;gap:12px;max-width:320px;margin:24px auto 0}
+.pick a{display:block;padding:14px;border-radius:12px;background:#fff;border:1px solid var(--line);text-decoration:none;font-weight:600}
+@media (min-width:720px){
+  .sticky h1{font-size:2rem}
+  .cta{width:auto}
+  .notes{grid-template-columns:repeat(3,1fr)}
+}
+@media (prefers-reduced-motion:reduce){.sticky,.note{transform:none}}

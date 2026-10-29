@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>PopNote — A note to yourself, the moment you open an app</title>
+<meta name="description" content="PopNote shows a sticky note you wrote yourself when you open an app you choose. For iPhone and iPad. Still in development — join the waitlist to hear when it launches.">
+<meta property="og:title" content="PopNote — A note to yourself, the moment you open an app">
+<meta property="og:description" content="PopNote shows a sticky note you wrote yourself when you open an app you choose. For iPhone and iPad. Still in development — join the waitlist to hear when it launches.">
+<meta name="theme-color" content="#fdf6e3">
+<link rel="alternate" hreflang="zh-Hant-TW" href="../zh-tw/">
+<link rel="alternate" hreflang="zh-Hans" href="../zh-cn/">
+<link rel="alternate" hreflang="ja" href="../ja/">
+<link rel="alternate" hreflang="en" href="../en/">
+<link rel="stylesheet" href="../assets/style.css">
+<!-- ANALYTICS PLACEHOLDER: GoatCounter
+     Replace the stub below with the snippet from GoatCounter once the account exists, e.g.
+     <script data-goatcounter="https://YOURCODE.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+     GOATCOUNTER_CODE: TODO -->
+<script id="goatcounter-placeholder"></script>
+</head>
+<body>
+<header class="top">
+  <span class="logo">PopNote</span>
+  <nav class="langs" aria-label="Language"><a href="../zh-tw/" hreflang="zh-Hant-TW" lang="zh-Hant-TW">繁體中文</a> <a href="../zh-cn/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a> <a href="../ja/" hreflang="ja" lang="ja">日本語</a> <a href="../en/" hreflang="en" lang="en" aria-current="page">English</a></nav>
+</header>
+<main>
+<section class="hero">
+  <div class="sticky"><h1>The moment you open an app, take a quick look at a note you wrote to yourself.</h1></div>
+  <p class="sub">PopNote pops up a sticky note you wrote yourself whenever you open an app you&#x27;ve picked. It doesn&#x27;t remind you at a set time or place. It reminds you right when you&#x27;re about to do the thing.</p>
+  <a class="cta" href="#waitlist">Notify me at launch</a>
+</section>
+<section class="scenarios">
+  <h2>Ways to use it</h2>
+  <ol class="notes">
+<li class="note n1"><h3>Before you shop, check your list</h3><p>Open a shopping app and your shopping list and this month&#x27;s budget pop up first. Buy what you came for.</p></li>
+<li class="note n2"><h3>Before you trade, check your rules</h3><p>Open your brokerage or crypto app and see the investing rules you set for yourself, like &quot;Don&#x27;t chase highs&quot; or &quot;No more than 10% of my funds on a single trade.&quot;</p></li>
+<li class="note n3"><h3>Before you scroll, check your goal</h3><p>Open a social app and see a line you wrote to yourself, a reminder of what you want to focus on today.</p></li>
+  </ol>
+</section>
+<section class="faq">
+  <h2>FAQ</h2>
+<details><summary>Will PopNote block me from using my apps?</summary><p>No. It just reminds you. Once you&#x27;ve read the note, you can use the app as usual.</p></details>
+<details><summary>How does the note show up?</summary><p>Your choice: as a notification banner or full screen.</p></details>
+<details><summary>Can I add more than one note to the same app?</summary><p>Yes. Each app can have multiple notes.</p></details>
+<details><summary>Which devices does it work on?</summary><p>iPhone and iPad. You set it up with Shortcuts, the app that comes built into iOS and iPadOS.</p></details>
+<details><summary>Is my data uploaded anywhere?</summary><p>No. Your notes stay on your device, and no usage data is uploaded.</p></details>
+<details><summary>When can I use it?</summary><p>PopNote is still in development. Leave your email and we&#x27;ll let you know as soon as it launches.</p></details>
+</section>
+<section id="waitlist" class="waitlist">
+  <h2>Notify me at launch</h2>
+  <!-- ============================================================
+       TALLY FORM PLACEHOLDER
+       Replace everything inside <div id="tally-form-slot"> with the Tally embed, e.g.
+         <iframe data-tally-src="https://tally.so/embed/TALLY_FORM_ID?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+                 loading="lazy" width="100%" height="300" frameborder="0" title="PopNote waitlist"></iframe>
+         <script async src="https://tally.so/widgets/embed.js"></script>
+       TALLY_FORM_ID: TODO (one form per language, or one form with a hidden "lang" field = en)
+       Tally fields should match: [1] Email (email, required)  [2] Which app would you most like a reminder for when you open it? (short text)
+       Thank-you text for Tally's completion screen: Thanks! We&#x27;ll email you when PopNote launches.
+       No backend: this placeholder form does not submit anywhere.
+       ============================================================ -->
+  <div id="tally-form-slot" class="form-slot" data-placeholder="tally" data-lang="en">
+    <form class="placeholder-form" onsubmit="return false" aria-describedby="form-note">
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required disabled>
+      <label for="app">Which app would you most like a reminder for when you open it?</label>
+      <input id="app" name="app" type="text" placeholder="e.g. Amazon, your brokerage app, Instagram" disabled>
+      <button type="submit" disabled>Notify me at launch</button>
+    </form>
+    <!-- Thank-you message (show after Tally submit if not using Tally's own completion page) -->
+    <p class="thanks" id="thanks" hidden>Thanks! We&#x27;ll email you when PopNote launches.</p>
+  </div>
+  <p class="form-note" id="form-note">We&#x27;ll only use your email to tell you when PopNote launches. You can unsubscribe anytime.</p>
+</section>
+</main>
+<footer class="foot">© PopNote</footer>
+<script>
+  // Thank-you handling: show #thanks if URL has ?thanks=1 (use as Tally redirect-on-completion target) or on Tally submit event.
+  (function(){
+    var t=document.getElementById('thanks');
+    function show(){ t.hidden=false; var f=document.querySelector('.placeholder-form'); if(f) f.hidden=true; }
+    if (/[?&]thanks=1/.test(location.search)) show();
+    window.addEventListener('message', function(ev){
+      try { var d = typeof ev.data==='string' ? JSON.parse(ev.data) : ev.data;
+        if (d && d.event==='Tally.FormSubmitted') show(); } catch(e){}
+    });
+  })();
+</script>
+</body>
+</html>

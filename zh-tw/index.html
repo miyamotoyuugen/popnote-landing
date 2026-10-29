@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>PopNote｜打開 App 的那一刻，先看一眼寫給自己的話</title>
+<meta name="description" content="PopNote 會在你打開指定 App 時，跳出一張你自己寫的便利貼。支援 iPhone 和 iPad，開發中，歡迎留下 Email 等上架通知。">
+<meta property="og:title" content="PopNote｜打開 App 的那一刻，先看一眼寫給自己的話">
+<meta property="og:description" content="PopNote 會在你打開指定 App 時，跳出一張你自己寫的便利貼。支援 iPhone 和 iPad，開發中，歡迎留下 Email 等上架通知。">
+<meta name="theme-color" content="#fdf6e3">
+<link rel="alternate" hreflang="zh-Hant-TW" href="../zh-tw/">
+<link rel="alternate" hreflang="zh-Hans" href="../zh-cn/">
+<link rel="alternate" hreflang="ja" href="../ja/">
+<link rel="alternate" hreflang="en" href="../en/">
+<link rel="stylesheet" href="../assets/style.css">
+<!-- ANALYTICS PLACEHOLDER: GoatCounter
+     Replace the stub below with the snippet from GoatCounter once the account exists, e.g.
+     <script data-goatcounter="https://YOURCODE.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+     GOATCOUNTER_CODE: TODO -->
+<script id="goatcounter-placeholder"></script>
+</head>
+<body>
+<header class="top">
+  <span class="logo">PopNote</span>
+  <nav class="langs" aria-label="Language"><a href="../zh-tw/" hreflang="zh-Hant-TW" lang="zh-Hant-TW" aria-current="page">繁體中文</a> <a href="../zh-cn/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a> <a href="../ja/" hreflang="ja" lang="ja">日本語</a> <a href="../en/" hreflang="en" lang="en">English</a></nav>
+</header>
+<main>
+<section class="hero">
+  <div class="sticky"><h1>打開 App 的那一刻，先看一眼寫給自己的話。</h1></div>
+  <p class="sub">PopNote 會在你打開指定 App 時，跳出一張你自己寫的便利貼。不是用時間或地點提醒，而是在你正要做那件事的時候。</p>
+  <a class="cta" href="#waitlist">上架時通知我</a>
+</section>
+<section class="scenarios">
+  <h2>可以這樣用</h2>
+  <ol class="notes">
+<li class="note n1"><h3>網購前，先看清單</h3><p>打開購物 App，先跳出你的購物清單和這個月的預算，買該買的就好。</p></li>
+<li class="note n2"><h3>下單前，先看紀律</h3><p>打開券商或加密貨幣 App，先看到自己訂的投資規則，例如「不追高」「單筆不超過一成資金」。</p></li>
+<li class="note n3"><h3>滑之前，先看目標</h3><p>打開社群 App，先看到你寫給自己的一句話，提醒自己今天想專心的事。</p></li>
+  </ol>
+</section>
+<section class="faq">
+  <h2>常見問題</h2>
+<details><summary>PopNote 會擋住我用 App 嗎？</summary><p>不會。它只是提醒你，看完就能照常使用。</p></details>
+<details><summary>便利貼會怎麼出現？</summary><p>你可以自己選：用通知橫幅跳出來，或是用全螢幕顯示。</p></details>
+<details><summary>同一個 App 可以放好幾張便利貼嗎？</summary><p>可以。一個 App 可以設定多張便利貼。</p></details>
+<details><summary>支援哪些裝置？</summary><p>支援 iPhone 和 iPad，需要搭配系統內建的「捷徑」App 設定。</p></details>
+<details><summary>我的資料會上傳嗎？</summary><p>不會。便利貼內容只存在你的裝置裡，也不會上傳任何使用紀錄。</p></details>
+<details><summary>什麼時候可以用？</summary><p>PopNote 還在開發中，留下 Email，上架時我們會第一時間通知你。</p></details>
+</section>
+<section id="waitlist" class="waitlist">
+  <h2>上架時通知我</h2>
+  <!-- ============================================================
+       TALLY FORM PLACEHOLDER
+       Replace everything inside <div id="tally-form-slot"> with the Tally embed, e.g.
+         <iframe data-tally-src="https://tally.so/embed/TALLY_FORM_ID?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+                 loading="lazy" width="100%" height="300" frameborder="0" title="PopNote waitlist"></iframe>
+         <script async src="https://tally.so/widgets/embed.js"></script>
+       TALLY_FORM_ID: TODO (one form per language, or one form with a hidden "lang" field = zh-tw)
+       Tally fields should match: [1] Email (email, required)  [2] 你最想在哪個 App 打開時被提醒？ (short text)
+       Thank-you text for Tally's completion screen: 謝謝你！PopNote 上架時，我們會寄信通知你。
+       No backend: this placeholder form does not submit anywhere.
+       ============================================================ -->
+  <div id="tally-form-slot" class="form-slot" data-placeholder="tally" data-lang="zh-tw">
+    <form class="placeholder-form" onsubmit="return false" aria-describedby="form-note">
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required disabled>
+      <label for="app">你最想在哪個 App 打開時被提醒？</label>
+      <input id="app" name="app" type="text" placeholder="例如：蝦皮、券商 App、Instagram" disabled>
+      <button type="submit" disabled>上架時通知我</button>
+    </form>
+    <!-- Thank-you message (show after Tally submit if not using Tally's own completion page) -->
+    <p class="thanks" id="thanks" hidden>謝謝你！PopNote 上架時，我們會寄信通知你。</p>
+  </div>
+  <p class="form-note" id="form-note">Email 只用來通知 PopNote 上架的消息，你可以隨時取消。</p>
+</section>
+</main>
+<footer class="foot">© PopNote</footer>
+<script>
+  // Thank-you handling: show #thanks if URL has ?thanks=1 (use as Tally redirect-on-completion target) or on Tally submit event.
+  (function(){
+    var t=document.getElementById('thanks');
+    function show(){ t.hidden=false; var f=document.querySelector('.placeholder-form'); if(f) f.hidden=true; }
+    if (/[?&]thanks=1/.test(location.search)) show();
+    window.addEventListener('message', function(ev){
+      try { var d = typeof ev.data==='string' ? JSON.parse(ev.data) : ev.data;
+        if (d && d.event==='Tally.FormSubmitted') show(); } catch(e){}
+    });
+  })();
+</script>
+</body>
+</html>

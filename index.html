@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PopNote</title>
+<meta name="description" content="PopNote shows a sticky note you wrote yourself when you open an app you choose. For iPhone and iPad. Still in development — join the waitlist to hear when it launches.">
+<link rel="alternate" hreflang="zh-Hant-TW" href="./zh-tw/">
+<link rel="alternate" hreflang="zh-Hans" href="./zh-cn/">
+<link rel="alternate" hreflang="ja" href="./ja/">
+<link rel="alternate" hreflang="en" href="./en/">
+<link rel="stylesheet" href="assets/style.css">
+<!-- ANALYTICS PLACEHOLDER: GoatCounter
+     Replace the stub below with the snippet from GoatCounter once the account exists, e.g.
+     <script data-goatcounter="https://YOURCODE.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+     GOATCOUNTER_CODE: TODO -->
+<script id="goatcounter-placeholder"></script>
+<script>
+  // Auto-pick language from browser; fallback is the picker below.
+  (function(){
+    var l=(navigator.languages&&navigator.languages[0]||navigator.language||'').toLowerCase(), p=null;
+    if(/^zh-(tw|hk|mo|hant)/.test(l)) p='zh-tw'; else if(/^zh/.test(l)) p='zh-cn';
+    else if(/^ja/.test(l)) p='ja'; else if(/^en/.test(l)) p='en';
+    if(p && !/[?&]stay/.test(location.search)) location.replace(p+'/');
+  })();
+</script>
+</head>
+<body>
+<main class="picker">
+  <div class="sticky"><h1>PopNote</h1></div>
+  <nav class="pick" aria-label="Language">
+    <a href="zh-tw/" hreflang="zh-Hant-TW" lang="zh-Hant-TW">繁體中文</a>
+    <a href="zh-cn/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+    <a href="ja/" hreflang="ja" lang="ja">日本語</a>
+    <a href="en/" hreflang="en" lang="en">English</a>
+  </nav>
+</main>
+</body>
+</html>
